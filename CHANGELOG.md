@@ -3,6 +3,13 @@
 All notable changes to this project appear in this file.
 The format follows Keep a Changelog. Version numbers follow SemVer.
 
+## [0.0.3] - 2026-10-14
+
+### Added
+
+- App icon (anvil with JSON braces) wired through the asset catalog.
+- ASM JSON pane uses a native scroll view so the mouse wheel scrolls it.
+
 ## [0.0.2] - 2026-10-14
 
 ### Added

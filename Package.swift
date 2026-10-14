@@ -13,7 +13,8 @@ let package = Package(
         .executableTarget(
             name: "AlloForge",
             dependencies: ["AlloForgeCore"],
-            path: "Sources/AlloForge"
+            path: "Sources/AlloForge",
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "AlloForgeCoreTests",

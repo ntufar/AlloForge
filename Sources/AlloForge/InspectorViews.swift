@@ -18,10 +18,8 @@ struct InspectorView: View {
                     LabeledContent("Rows", value: "\(file.rowCount)")
                 }
                 Section("ASM JSON") {
-                    ScrollView {
-                        HighlightedJSONView(text: file.asmJSON ?? "{}")
-                    }
-                    .frame(minHeight: 160)
+                    ScrollableJSONView(text: file.asmJSON ?? "{}")
+                        .frame(minHeight: 160, maxHeight: 320)
                 }
                 Section("Data Quality (\(file.issues.count))") {
                     ForEach(file.issues) { issue in
